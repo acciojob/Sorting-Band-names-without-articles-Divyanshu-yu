@@ -1,5 +1,6 @@
-//your code here
-let regexp = /\bthe\b/\ban\b/\ba\b/gi;
+// //your code here
+// let regexp = /\bthe\b/\ban\b/\ba\b/gi;
+const regexp = /\b(?:a|an|the)\b/i;
 let arr=[
 	"The Virupaksha Temple","A Victoria Memorial"," An Tajmahal"
 ];
@@ -14,8 +15,8 @@ for(let i=0;i<arr.length;i++)
 
 	let ul = document.querySelector('#bands');
    for(let i=0; i<articleLessArray.length; i++){
-	let li = document.createElement("li");
-	li.textContent = ans[i];
-	ul.appendChild(li);
+	   let li = document.createElement("li");
+	   li.textContent = ans[i];
+	   ul.appendChild(li);
    }
 
